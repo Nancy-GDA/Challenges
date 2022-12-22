@@ -1,4 +1,4 @@
-#FizzBuzz
+# FizzBuzz
 Write a short program that prints N number on a new line. 
 * For each multiple of 3, print "Fizz" instead of the number. 
 
