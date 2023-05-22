@@ -1,18 +1,15 @@
 
 const multiples = (num) =>{
-    for(let i= 0;i <= num; i++){
-      if(i % 3 == 0){
-      console.log('Buzz')
-    }
-        else if(i % 5 == 0){
-      console.log('Fizz')
-    } 
-      if(i % 3 && i % 5){
-      console.log('FizzBizz')
-    }else{
-      console.log(num)
-    }      
-  }  
+  for(let index = 1; index<= num;index ++){
+   const multipleOf3 = index % 3 === 0
+   const multipleOf5 = index % 5 === 0
+
+   if(multipleOf3 && multipleOf5){
+    console.log('fizzbuzz')
+   }else{
+    console.log(multipleOf3 ? 'fizz' : multipleOf5 ? 'buzz' : index)
+   }
   }
-  
-  multiples(15)
+}
+
+multiples(100)

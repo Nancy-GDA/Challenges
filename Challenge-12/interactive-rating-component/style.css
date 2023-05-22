@@ -1,0 +1,164 @@
+:root{
+  --azul_marino:hsl(213, 19%, 18%);
+  --azul_obscuro:hsl(216, 12%, 8%);
+  --gris_claro:hsl(217, 12%, 63%);
+  --gris: hsl(216, 12%, 54%);
+  --naranja:hsl(25, 97%, 53%);
+}
+
+body{
+  margin: 0px ;
+  box-sizing: 0px;
+  padding: 0px;
+  font-family: 'Overpass', sans-serif;;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--azul_obscuro);
+  height: 100vh;
+}
+
+.star{
+  margin: 0 0 1.7rem 0;
+}
+
+.star img{
+  width: 1rem;
+  background-color: var(--azul_marino);
+  filter: brightness(1.15);
+  border-radius: 50%;
+  padding: 1.3rem;
+}
+
+h4,h3{
+  color: white;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+h3{
+  font-size:1.5rem;
+}
+
+p{
+  font-size: 15px;
+  color: var(--gris);
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--azul_marino);
+  width: 21rem;
+  border-radius: .7rem;
+  padding: 2.1rem;
+}
+.card-thanks{
+  display: none;
+}
+
+.card-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-header p{
+  color: var(--naranja);
+  background-color: var(--azul_marino);
+  filter: brightness(1.15);
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+}
+
+.message{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.rating{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0px;
+}
+
+.rating-item{
+  text-align: center;
+  width: 1.15rem;
+  border-radius: 50%;
+  background-color: var(--azul_marino);
+  padding: 1.3rem;
+  color: var(--gris);
+  filter: brightness(1.15);
+
+}
+
+.btn{
+  background-color: var(--naranja);
+  color: white;
+  padding: .8rem ;
+  border-radius: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: var(--naranja);
+  background-color: white;
+}
+
+
+@media (max-width:375px){
+  .card{
+    width: 17.5rem;
+    font-size: 10px;
+    padding: 1.5rem;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card-header p{
+    padding: .3rem 1rem;
+  }
+
+  .message{
+    margin: 0px;
+  }
+
+  h4,h3{
+    font-size: 1.3rem;
+  }
+
+  .star img{
+    padding: .9rem;
+  }
+
+  .thanks img{
+    width: 8rem;
+  }
+
+  .rating-item{
+    width: 1rem;
+    padding: 1rem;
+  }
+
+ 
+}
+
+@media (min-width:1140px){
+  .card{
+    width: 19rem;
+  }
+
+}
