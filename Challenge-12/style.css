@@ -97,7 +97,16 @@ p{
   padding: 1.3rem;
   color: var(--gris);
   filter: brightness(1.15);
+}
 
+.rating-item:hover{
+  background-color: var(--gris_claro);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--naranja);
+  color:white;
 }
 
 .btn{
